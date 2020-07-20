@@ -1,0 +1,28 @@
+get http://localhost:3333/profile 
+post http://localhost:3333/session - login
+{
+    "id": "2ed48703" - id da ong
+}
+
+---------
+ong
+get http://localhost:3333/ongs - lista as ongs
+post http://localhost:3333/ongs - cria uma ong
+{
+	"name": "APAD",
+	"email": "teste@teste.com",
+	"whatsapp": "48999999999",
+	"city": "Florianopolis",
+	"uf": "SC"
+}
+----------------------
+delete http://localhost:3333/incidents/1 - deleta um incident
+get http://localhost:3333/incidents- lista os incidentes
+post http://localhost:3333/incidents - crea um incicente
+{
+	"title": "Caso 1",
+	"description": "descrição teste",
+	"value": 212.50
+}
+header do post
+Authorization - e39ef783 id da ong
